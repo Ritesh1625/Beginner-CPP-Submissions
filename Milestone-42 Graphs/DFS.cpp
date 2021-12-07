@@ -23,7 +23,7 @@ int main()
       g[v].push_back(u);
     }
     
-    dfs(0. g, vis);
+    dfs(0, g, vis);
     
     cout << endl;
   }
@@ -36,7 +36,7 @@ void dfs(int s, vector<int>g[], bool *vis)
   cout << s << " ";
   for(int i=0; i<g[s].size(); ++i)
   {
-    if(vis[g[s][i]==false)
+    if(vis[g[s][i]]==false)
            dfs(g[s][i], g , vis);         
   }
  }
