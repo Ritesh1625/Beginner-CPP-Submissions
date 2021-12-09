@@ -30,7 +30,7 @@ public:
         
         for(int i=0;i<flights.size();++i)
         {    
-            adj[flights[i][0]].pb(flights[i][1]);
+            adj[flights[i][0]].push_back(flights[i][1]);
             cost[flights[i][0]][flights[i][1]] = flights[i][2];
         }
         
